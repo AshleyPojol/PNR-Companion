@@ -13,16 +13,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="41dp"
         android:layout_marginTop="52dp"
+        android:layout_marginBottom="36dp"
         android:fontFamily="@font/poppins_medium"
         android:text="Login"
         android:textColor="#111111"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Fname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputPassword"
         android:layout_width="300dp"
         android:layout_height="50dp"
@@ -31,7 +33,6 @@
         android:drawableLeft="@drawable/ic_baseline_security"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Insert your Password here"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -39,12 +40,28 @@
         android:paddingBottom="10dp"
         android:textColor="#000000"
         android:textSize="14sp"
+        app:passwordToggleEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/input_Fname"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/input_Fname"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.394" />
+        app:layout_constraintVertical_bias="0.394" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoText="false"
+            android:background="@drawable/btn_trans"
+            android:ems="8"
+            android:inputType="textPassword"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
         android:id="@+id/input_Fname"
@@ -180,6 +197,7 @@
         android:drawableStart="@drawable/facebook"
         android:fontFamily="@font/poppins"
         android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         android:text="Facebook"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
@@ -199,6 +217,7 @@
         android:drawableStart="@drawable/google"
         android:fontFamily="@font/poppins"
         android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         android:text="Google"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
