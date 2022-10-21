@@ -7,28 +7,46 @@
     tools:context=".RegisterActivity"
     android:background="@drawable/bbgr">
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_pass2"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:autofillHints=""
         android:background="@drawable/input_bg"
         android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="Insert Password Here"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="10sp"
+        app:passwordToggleEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/input_Lname"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/input_Fname"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.666"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.666">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoText="false"
+            android:background="@drawable/btn_trans"
+            android:ems="8"
+            android:hint="Input Password"
+            android:inputType="textPassword"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+
 
     <TextView
         android:id="@+id/txt_pass2"
@@ -62,9 +80,8 @@
 
     <EditText
         android:id="@+id/input_Fname"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="48dp"
-        android:layout_marginStart="41dp"
         android:layout_marginEnd="41dp"
         android:background="@drawable/input_bg"
         android:drawablePadding="10dp"
@@ -76,11 +93,11 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txt_Fname"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.226" />
 
@@ -98,7 +115,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/input_Lname"
         app:layout_constraintHorizontal_bias="0.0"
@@ -108,9 +125,8 @@
 
     <EditText
         android:id="@+id/input_Lname"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="48dp"
-        android:layout_marginStart="41dp"
         android:layout_marginEnd="41dp"
         android:background="@drawable/input_bg"
         android:drawablePadding="10dp"
@@ -122,13 +138,13 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_Lname"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.226" />
+        app:layout_constraintVertical_bias="0.225" />
 
     <TextView
         android:id="@+id/txt_Fname"
@@ -167,14 +183,14 @@
         android:background="@drawable/input_bg"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Insert  Emaill Address"
+        android:hint="Insert Emaill Address"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/input_Lname"
         app:layout_constraintHorizontal_bias="0.0"
@@ -262,12 +278,12 @@
         android:layout_height="wrap_content"
         android:text="Already Have an Account?"
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_signup1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintHorizontal_bias="0.342"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.945" />
+        app:layout_constraintTop_toTopOf="@+id/txt_signup1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/txt_signup1"
@@ -277,7 +293,7 @@
         android:textColor="@color/purple"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintHorizontal_bias="0.701"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.945" />
