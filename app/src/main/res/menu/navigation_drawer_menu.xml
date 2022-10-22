@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/information">
+            <menu>
+                <item
+                    android:id="@+id/nav_edit_account"
+                    android:icon="@drawable/ic_editaccount"
+                    android:title="@string/edit_account" />
+                <item
+                    android:id="@+id/nav_username"
+                    android:icon="@drawable/ic_username"
+                    android:title="@string/username" />
+                <item
+                    android:id="@+id/nav_email"
+                    android:icon="@drawable/ic_email"
+                    android:title="@string/e_mail" />
+                <item
+                    android:id="@+id/nav_password"
+                    android:icon="@drawable/ic_password"
+                    android:title="@string/password" />
+            </menu>
+        </item>
+        <item android:title="@string/navigation">
+            <menu>
+                <item
+                    android:id="@+id/nav_schedule"
+                    android:icon="@drawable/ic_schedule"
+                    android:title="@string/schedule" />
+                <item
+                    android:id="@+id/nav_station"
+                    android:icon="@drawable/ic_station"
+                    android:title="@string/station" />
+                <item
+                    android:id="@+id/nav_e_wallet"
+                    android:icon="@drawable/ic_ewallet"
+                    android:title="@string/e_wallet" />
+                <item
+                    android:id="@+id/nav_promos"
+                    android:icon="@drawable/ic_promos"
+                    android:title="@string/promos" />
+                <item
+                    android:id="@+id/nav_services"
+                    android:icon="@drawable/ic_services"
+                    android:title="@string/services" />
+                <item
+                    android:id="@+id/nav_rewards"
+                    android:icon="@drawable/ic_rewards"
+                    android:title="@string/rewards" />
+            </menu>
+        </item>
+        <item android:title="@string/account">
+            <menu>
+                <item
+                    android:id="@+id/nav_add_account"
+                    android:icon="@drawable/ic_addaccount"
+                    android:title="@string/add_account" />
+                <item
+                    android:id="@+id/nav_switch_account"
+                    android:icon="@drawable/ic_switchaccount"
+                    android:title="@string/switch_account" />
+                <item
+                    android:id="@+id/nav_log_out"
+                    android:icon="@drawable/ic_logout"
+                    android:title="@string/log_out" />
+            </menu>
+        </item>
+    </group>
+</menu>

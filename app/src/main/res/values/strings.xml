@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">PNR Companion</string>
+    <string name="gcash_image">GCash Image</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="username">Username</string>
+    <string name="station">Station</string>
+    <string name="schedule">Schedule</string>
+    <string name="password">Password</string>
+    <string name="e_mail">E-mail</string>
+    <string name="promos">Promos</string>
+    <string name="e_wallet">E-Wallet</string>
+    <string name="services">Services</string>
+    <string name="rewards">Rewards</string>
+    <string name="add_account">Add Account</string>
+    <string name="switch_account">Switch Account</string>
+    <string name="log_out">Log Out</string>
+    <string name="information">Information</string>
+    <string name="navigation">Navigation</string>
+    <string name="account">Account</string>
+    <string name="code_here">CODE HERE</string>
+    <string name="info_shit">info shit</string>
 </resources>
