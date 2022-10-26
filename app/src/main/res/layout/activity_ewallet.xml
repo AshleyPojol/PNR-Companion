@@ -13,7 +13,6 @@
         android:layout_marginTop="100dp"
         android:contentDescription="@string/gcash_image"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/download"
-        tools:srcCompat="@drawable/download" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

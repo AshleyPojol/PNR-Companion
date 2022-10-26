@@ -35,7 +35,6 @@
             android:autoText="false"
             android:background="@drawable/btn_trans"
             android:ems="8"
-            android:hint="Input Password"
             android:inputType="textPassword"
             android:paddingTop="10dp"
             android:paddingRight="10dp"
@@ -256,7 +255,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/cb_terms"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.809" />
+        app:layout_constraintVertical_bias="0.809" />.
 
     <Button
         android:id="@+id/btn_create"
@@ -278,6 +277,7 @@
         android:layout_height="wrap_content"
         android:text="Already Have an Account?"
         android:textColor="#000000"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/txt_signup1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.342"
@@ -291,9 +291,10 @@
         android:layout_height="wrap_content"
         android:text="Sign In"
         android:textColor="@color/purple"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintHorizontal_bias="0.668"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.945" />

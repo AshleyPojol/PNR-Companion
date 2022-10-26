@@ -59,7 +59,8 @@
             android:paddingRight="10dp"
             android:paddingBottom="10dp"
             android:textColor="#000000"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -131,23 +132,36 @@
         app:layout_constraintVertical_bias="0.469" />
 
     <TextView
+        android:id="@+id/txt_signup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.696"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.813" />
+
+    <TextView
         android:id="@+id/txt_signup1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Don't Have Account? Sign Up"
+        android:text="Don't Have Account?"
         android:textColor="#070707"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.36"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814" />
+        app:layout_constraintVertical_bias="0.813" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="56dp"
         android:background="@drawable/btn_bg"
         android:backgroundTint="@color/dark_blue"
         android:fontFamily="@font/poppins"
@@ -156,7 +170,7 @@
         android:text="SIGN-IN"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/inputPassword"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/inputPassword"
         app:layout_constraintTop_toBottomOf="@+id/inputPassword"
         app:rippleColor="#FFFFFF" />
