@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">PNR Companion</string>
-    <string name="gcash_image">GCash Image</string>
+    <string name="GCash_image">GCash Logo</string>
+    <string name="GrabPay_image">GrabPay Logo</string>
+    <string name="PayPal_image">Paypal Logo</string>
+    <string name="Visa_image">Visa Logo</string>
+    <string name="BPI_image">BPI Logo</string>
+    <string name="BancNet_image">BancNet Logo</string>
+    <string name="UnionBank_image">UnionBank Logo</string>
     <string name="edit_account">Edit Account</string>
     <string name="username">Username</string>
     <string name="station">Station</string>
@@ -30,4 +36,5 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="cash_on_arrival">Cash on Arrival</string>
 </resources>
