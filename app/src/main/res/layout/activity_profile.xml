@@ -8,37 +8,32 @@
     android:background="@drawable/bbgp">
 
     <Button
-        android:id="@+id/btn_promos"
+        android:id="@+id/btn_sch"
         android:layout_width="109dp"
         android:layout_height="106dp"
-        android:background="@color/white"
-        android:text="Button"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingTop="40dp"
+        android:text="Schedule"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintHorizontal_bias="0.231"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.616" />
-
-    <Button
-        android:id="@+id/btn_ewallet"
-        android:layout_width="109dp"
-        android:layout_height="106dp"
-        android:background="@color/white"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.205"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.616" />
+        app:layout_constraintVertical_bias="0.384" />
 
     <Button
         android:id="@+id/btn_sta"
         android:layout_width="109dp"
         android:layout_height="106dp"
-        android:background="@color/white"
-        android:text="Button"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingTop="40dp"
+        android:text="Station"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
         app:layout_constraintBottom_toBottomOf="@+id/btn_sch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.768"
@@ -47,50 +42,79 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btn_services"
-        android:layout_width="109dp"
-        android:layout_height="106dp"
-        android:background="@color/white"
-        android:text="Service"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.205"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.822" />
-
-    <Button
         android:id="@+id/btn_rewards"
         android:layout_width="109dp"
         android:layout_height="106dp"
-        android:background="@color/white"
-        android:text="Button"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingTop="40dp"
+        android:text="Rewards"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.768"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.822" />
+        app:layout_constraintVertical_bias="0.852" />
 
     <Button
-        android:id="@+id/btn_sch"
+        android:id="@+id/btn_services"
         android:layout_width="109dp"
         android:layout_height="106dp"
-        android:background="@color/white"
-        android:text="Button"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingTop="40dp"
+        android:text="Service"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintHorizontal_bias="0.231"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintVertical_bias="0.852" />
+
+    <Button
+        android:id="@+id/btn_promos"
+        android:layout_width="109dp"
+        android:layout_height="106dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingTop="40dp"
+        android:text="Promos"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.608" />
+
+    <Button
+        android:id="@+id/btn_ewallet"
+        android:layout_width="109dp"
+        android:layout_height="106dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingTop="40dp"
+        android:text="E-Wallet"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.608" />
 
     <TextView
         android:id="@+id/txt_title"
         android:layout_width="200dp"
         android:layout_height="30dp"
         android:layout_marginStart="117dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="100dp"
         android:fontFamily="@font/poppins_bold"
         android:text="PNR COMPANION"
@@ -98,7 +122,106 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="27dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005"
+        app:srcCompat="@drawable/pnr" />
+
+    <Button
+        android:id="@+id/btn_remaining"
+        android:layout_width="137dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FEEEEE"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="70dp"
+        android:paddingTop="25dp"
+        android:text="₱ 1,203.09"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <Button
+        android:id="@+id/btn_remainingbal"
+        android:layout_width="137dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FEEEEE"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="80dp"
+        android:paddingTop="25dp"
+        android:text="25.18"
+        android:textColor="#F10C0C"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <Button
+        android:id="@+id/btn_prof1"
+        android:layout_width="298dp"
+        android:layout_height="101dp"
+        android:backgroundTint="#FEEEEE"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingRight="50dp"
+        android:paddingBottom="40dp"
+        android:text="REINER GENA"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <TextView
+        android:id="@+id/txt_acctype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Student Account"
+        android:textColor="@color/dark_blue"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_prof1"
+        app:layout_constraintEnd_toEndOf="@+id/btn_prof1"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="@+id/btn_prof1"
+        app:layout_constraintTop_toTopOf="@+id/btn_prof1"
+        app:layout_constraintVertical_bias="0.535" />
+
+    <TextView
+        android:id="@+id/txt_bal"
+        android:layout_width="117dp"
+        android:layout_height="21dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Remaining Balance"
+        android:textColor="@color/dark_blue"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <TextView
+        android:id="@+id/txt_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Reward Balance"
+        android:textColor="@color/dark_blue"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="176dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

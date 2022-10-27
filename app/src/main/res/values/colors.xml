@@ -10,4 +10,5 @@
     <color name="dark_blue">#004AAD</color>
     <color name="purple">#a16ce6</color>
     <color name="transparent">#00000000</color>
+    <color name='pinkish'>#ffefef</color>
 </resources>

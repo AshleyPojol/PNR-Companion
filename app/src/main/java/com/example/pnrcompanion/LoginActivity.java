@@ -25,25 +25,28 @@ public class LoginActivity extends AppCompatActivity {
         TextView text2=findViewById(R.id.txt_3);
         Button btn1=findViewById(R.id.btnLogin);
 
-        text1.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v){
-                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
-            }
-        });
-        text2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, ForgetPasswordActivity.class));
-            }
-        });
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this, ProfileActivity.class));
             }
         });
+
+        text1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+            }
+        });
+
+        text2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, ForgetPasswordActivity.class));
+            }
+        });
+
+
 
 
     }
