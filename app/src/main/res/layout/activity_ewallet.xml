@@ -17,8 +17,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/GCash"
-        tools:srcCompat="@drawable/GCash" />
+        app:srcCompat="@drawable/gcash" />
 
     <ImageButton
         android:id="@+id/imageButton_GrabPay"
@@ -32,7 +31,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_COA"
-        app:srcCompat="@drawable/GrabPay"
+        app:srcCompat="@drawable/grabpay"
         tools:ignore="ImageContrastCheck" />
 
     <ImageButton
@@ -46,7 +45,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton_GCash"
-        app:srcCompat="@drawable/Paypal" />
+        app:srcCompat="@drawable/paypal" />
 
     <ImageButton
         android:id="@+id/imageButton_BPI"
@@ -59,7 +58,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton_GrabPay"
-        app:srcCompat="@drawable/BPI" />
+        app:srcCompat="@drawable/bpi" />
 
     <ImageButton
         android:id="@+id/imageButton_Unionbank"
@@ -72,7 +71,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton_BPI"
-        app:srcCompat="@drawable/UnionBank"
+        app:srcCompat="@drawable/unionbank"
         tools:ignore="ImageContrastCheck" />
 
     <ImageButton
@@ -86,7 +85,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton_Visa"
-        app:srcCompat="@drawable/Bancnet" />
+        app:srcCompat="@drawable/bancnet" />
 
     <ImageButton
         android:id="@+id/imageButton_Visa"
