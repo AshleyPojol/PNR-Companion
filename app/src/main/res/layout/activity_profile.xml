@@ -87,13 +87,18 @@
 
     <TextView
         android:id="@+id/txt_title"
-        android:layout_width="176dp"
+        android:layout_width="200dp"
         android:layout_height="30dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="100dp"
         android:fontFamily="@font/poppins_bold"
         android:text="PNR COMPANION"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="3dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

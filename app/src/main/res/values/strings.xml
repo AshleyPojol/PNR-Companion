@@ -37,4 +37,6 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="cash_on_arrival">Cash on Arrival</string>
+    <string name="pnr_companion">PNR Companion</string>
+    <string name="pnr">PNR</string>
 </resources>

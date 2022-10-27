@@ -4,14 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#004AAD">
+    android:background="@drawable/bbgp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="1dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pnr"
+        android:contentDescription="@string/pnr"/>
+
+    <TextView
+        android:id="@+id/textView_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="145dp"
+        android:text="@string/pnr_companion"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_COA"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/cash_on_arrival"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton_GCash"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="50dp"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/GCash_image"
         android:scaleType="fitCenter"
@@ -21,10 +62,10 @@
 
     <ImageButton
         android:id="@+id/imageButton_GrabPay"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
         android:background="#2196F3"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/GrabPay_image"
@@ -36,10 +77,10 @@
 
     <ImageButton
         android:id="@+id/imageButton_Paypal"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/PayPal_image"
         android:scaleType="fitCenter"
@@ -49,10 +90,10 @@
 
     <ImageButton
         android:id="@+id/imageButton_BPI"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/BPI_image"
         android:scaleType="fitCenter"
@@ -61,11 +102,24 @@
         app:srcCompat="@drawable/bpi" />
 
     <ImageButton
+        android:id="@+id/imageButton_Visa"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="@string/Visa_image"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_Paypal"
+        app:srcCompat="@drawable/mastercard" />
+
+    <ImageButton
         android:id="@+id/imageButton_Unionbank"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/UnionBank_image"
         android:scaleType="fitCenter"
@@ -76,10 +130,10 @@
 
     <ImageButton
         android:id="@+id/imageButton_Bancnet"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/BancNet_image"
         android:scaleType="fitCenter"
@@ -87,27 +141,22 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton_Visa"
         app:srcCompat="@drawable/bancnet" />
 
-    <ImageButton
-        android:id="@+id/imageButton_Visa"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#FFFFFF"
-        android:contentDescription="@string/Visa_image"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton_Paypal"
-        app:srcCompat="@drawable/mastercard" />
-
     <Button
-        android:id="@+id/button_COA"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="80dp"
-        android:backgroundTint="#FFFFFF"
-        android:text="@string/cash_on_arrival"
+        android:id="@+id/button2"
+        android:layout_width="263dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#004AAD"
+        android:clickable="false"
+        android:text="@string/e_wallet"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
