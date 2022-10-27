@@ -39,4 +39,11 @@
     <string name="cash_on_arrival">Cash on Arrival</string>
     <string name="pnr_companion">PNR Companion</string>
     <string name="pnr">PNR</string>
+    <string name="all">ALL</string>
+    <string name="food_and_beverages">FOOD AND BEVERAGES</string>
+    <string name="discount">25% OFF DISCOUNT</string>
+    <string name="free_ride">FREE RIDE</string>
+    <string name="_1_jumbo_fries">1 JUMBO FRIES</string>
+    <string name="buy_2_take_1">BUY 2   TAKE 1</string>
+    <string name="redeem">REDEEM</string>
 </resources>
