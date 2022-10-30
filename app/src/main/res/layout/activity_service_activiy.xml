@@ -4,78 +4,159 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bbgp"
     tools:context=".ServiceActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bbgp"
+        android:background="@drawable/back_3"
         tools:context=".ServiceActivity"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="264dp">
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="-58dp">
+
+        <TextView
+            android:id="@+id/txt_records3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:drawableTint="@color/dark_blue"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Records"
+            android:textColor="@color/dark_blue"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_records3"
+            app:layout_constraintEnd_toEndOf="@+id/btn_records3"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintStart_toStartOf="@+id/btn_records3"
+            app:layout_constraintTop_toTopOf="@+id/btn_records3" />
+
+        <Button
+            android:id="@+id/btn_records3"
+            android:layout_width="125dp"
+            android:layout_height="46dp"
+            android:background="@drawable/box"
+            android:drawableStart="@drawable/ic_baseline_newspaper_24"
+            android:drawableTint="@color/dark_blue"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingLeft="10dp"
+            android:textColor="@color/dark_blue"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="645dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="125dp"
+            android:layout_height="46dp"
+            android:background="@drawable/box"
+            android:drawableStart="@drawable/ic_baseline_person"
+            android:drawableTint="@color/dark_blue"
+            android:paddingLeft="15dp"
+            tools:layout_editor_absoluteX="221dp"
+            tools:layout_editor_absoluteY="645dp" />
+
+        <TextView
+            android:id="@+id/txt_profile3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTint="#FF9800"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Profile"
+            android:textColor="@color/dark_blue"
+            app:layout_constraintBottom_toBottomOf="@+id/button3"
+            app:layout_constraintEnd_toEndOf="@+id/button3"
+            app:layout_constraintHorizontal_bias="0.62"
+            app:layout_constraintStart_toStartOf="@+id/button3"
+            app:layout_constraintTop_toTopOf="@+id/button3" />
+
+        <TextView
+            android:id="@+id/txt_complaints"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:autoText="false"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Complaints"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.812"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.355" />
+
+        <TextView
+            android:id="@+id/txt_inquiry"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:autoText="false"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Inquiry"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.195"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.355" />
 
         <TextView
             android:id="@+id/txt_cus"
-            android:layout_width="186dp"
-            android:layout_height="31dp"
+            android:layout_width="211dp"
+            android:layout_height="35dp"
             android:autoText="false"
-            android:background="@color/dark_blue"
+            android:background="@drawable/btn_bg"
             android:fontFamily="@font/poppins_bold"
             android:gravity="center"
-            android:text="Customer Service"
-            android:textColor="#FDFDFD"
-            android:textSize="18sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="CUSTOMER SERVICE"
+            android:textColor="@color/white"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.662"
+            app:layout_constraintHorizontal_bias="0.755"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.081" />
+            app:layout_constraintVertical_bias="0.084" />
 
         <TextView
-            android:id="@+id/txt_comp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_bold"
-            android:text="COMPANY ADDRESS"
-            android:textColor="@color/dark_blue"
-            android:textSize="16dp"
-            tools:layout_editor_absoluteX="57dp"
-            tools:layout_editor_absoluteY="118dp" />
-
-        <TextView
-            android:id="@+id/txt_Desc3"
+            android:id="@+id/txt_Address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
             android:text="Tondo, Manila 1000 "
             android:textColor="@color/dark_blue"
-            tools:layout_editor_absoluteX="137dp"
-            tools:layout_editor_absoluteY="221dp" />
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_Building"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="@+id/txt_Building"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.259" />
 
         <TextView
-            android:id="@+id/txt_Desc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
-            android:text="Mayhaligue Street "
-            android:textColor="@color/dark_blue"
-            tools:layout_editor_absoluteX="139dp"
-            tools:layout_editor_absoluteY="189dp" />
-
-        <TextView
-            android:id="@+id/txt_Desc2"
+            android:id="@+id/txt_Building"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
             android:text="PNR Executive Bldg (Tutuban Station),  "
             android:textColor="@color/dark_blue"
-            tools:layout_editor_absoluteX="73dp"
-            tools:layout_editor_absoluteY="159dp" />
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.185" />
 
         <TextView
-            android:id="@+id/txt_phone2"
+            android:id="@+id/txt_Cellphone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_baseline_person"
@@ -83,11 +164,16 @@
             android:fontFamily="@font/poppins"
             android:text="0916-582-5670"
             android:textColor="@color/dark_blue"
-            tools:layout_editor_absoluteX="190dp"
-            tools:layout_editor_absoluteY="254dp" />
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.708"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.289" />
 
         <TextView
-            android:id="@+id/txt_phone"
+            android:id="@+id/txt_Landline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableLeft="@android:drawable/stat_sys_phone_call"
@@ -95,116 +181,182 @@
             android:fontFamily="@font/poppins"
             android:text="319-90041"
             android:textColor="@color/dark_blue"
-            tools:layout_editor_absoluteX="89dp"
-            tools:layout_editor_absoluteY="254dp" />
-
-        <Button
-            android:id="@+id/btn_inquiry"
-            android:layout_width="125dp"
-            android:layout_height="50dp"
-            android:background="@drawable/btn_bg"
-            android:fontFamily="@font/poppins_bold"
-            android:text="INQUIRY"
-            android:textColor="#FBFBFB"
             android:textSize="12sp"
-            tools:layout_editor_absoluteX="65dp"
-            tools:layout_editor_absoluteY="300dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.334"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.289" />
 
-        <Button
-            android:id="@+id/btn_inquiry"
-            android:layout_width="125dp"
-            android:layout_height="50dp"
-            android:background="@drawable/btn_bg"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Comments and Complaints"
-            android:textColor="#FBFBFB"
+        <TextView
+            android:id="@+id/txt_Street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Mayhaligue Street "
+            android:textColor="@color/dark_blue"
             android:textSize="12sp"
-            tools:layout_editor_absoluteX="210dp"
-            tools:layout_editor_absoluteY="300dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_Building"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toStartOf="@+id/txt_Building"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.219" />
+
+        <TextView
+            android:id="@+id/txt_comp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="COMPANY ADDRESS"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.203"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.147" />
+
+        <TextView
+            android:id="@+id/txt_socialmedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="SOCIAL MEDIA"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_comp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/txt_comp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.426" />
+
+        <TextView
+            android:id="@+id/txt_tondo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="90dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Tondo, Maynila 1000"
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_shoot"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="@+id/txt_shoot"
+            app:layout_constraintTop_toBottomOf="@+id/txt_4th"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_shoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="shoot request should be sent through postal mail"
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_alllet"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="@+id/txt_alllet"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.639" />
+
+        <TextView
+            android:id="@+id/txt_office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Office of the General Manager"
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_4th"
+            app:layout_constraintEnd_toEndOf="@+id/txt_shoot"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="@+id/txt_shoot"
+            app:layout_constraintTop_toBottomOf="@+id/txt_thegenerl" />
+
+        <TextView
+            android:id="@+id/txt_4th"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="4th Floor PNR Executive Bldg. Mayhaligue St."
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_shoot"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="@+id/txt_shoot"
+            app:layout_constraintTop_toBottomOf="@+id/txt_office" />
+
+        <TextView
+            android:id="@+id/txt_thegenerl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="The General Manager"
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_shoot"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="@+id/txt_shoot"
+            app:layout_constraintTop_toBottomOf="@+id/txt_shoot2" />
+
+        <TextView
+            android:id="@+id/txt_shoot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="addressed to:"
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_shoot"
+            app:layout_constraintStart_toStartOf="@+id/txt_shoot"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.688" />
+
+        <TextView
+            android:id="@+id/txt_alllet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="All letters such as school request, photo & video"
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.598" />
+
+        <TextView
+            android:id="@+id/txt_mailingaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="MAILING ADDRESS"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_comp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/txt_comp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.556" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/txt_cus"
-        android:layout_width="186dp"
-        android:layout_height="31dp"
-        android:autoText="false"
-        android:background="@color/dark_blue"
-        android:fontFamily="@font/poppins_bold"
-        android:gravity="center"
-        android:text="Customer Service"
-        android:textColor="#FDFDFD"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.662"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081" />
-
-    <TextView
-        android:id="@+id/txt_comp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_bold"
-        android:text="COMPANY ADDRESS"
-        android:textColor="@color/dark_blue"
-        android:textSize="16dp"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="118dp" />
-
-    <TextView
-        android:id="@+id/txt_Desc3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
-        android:text="Tondo, Manila 1000 "
-        android:textColor="@color/dark_blue"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="221dp" />
-
-    <TextView
-        android:id="@+id/txt_Desc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
-        android:text="Mayhaligue Street "
-        android:textColor="@color/dark_blue"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="189dp" />
-
-    <TextView
-        android:id="@+id/txt_Desc2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
-        android:text="PNR Executive Bldg (Tutuban Station),  "
-        android:textColor="@color/dark_blue"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="159dp" />
-
-    <TextView
-        android:id="@+id/txt_phone2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_baseline_person"
-        android:drawableTint="@color/dark_blue"
-        android:fontFamily="@font/poppins"
-        android:text="0916-582-5670"
-        android:textColor="@color/dark_blue"
-        tools:layout_editor_absoluteX="190dp"
-        tools:layout_editor_absoluteY="254dp" />
-
-    <TextView
-        android:id="@+id/txt_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@android:drawable/stat_sys_phone_call"
-        android:drawableTint="@color/dark_blue"
-        android:fontFamily="@font/poppins"
-        android:text="319-90041"
-        android:textColor="@color/dark_blue"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="254dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

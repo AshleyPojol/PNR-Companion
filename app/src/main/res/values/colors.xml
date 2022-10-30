@@ -11,4 +11,6 @@
     <color name="purple">#a16ce6</color>
     <color name="transparent">#00000000</color>
     <color name='pinkish'>#ffefef</color>
+    <color name='yellow'>#FBBC05</color>
+    <color name="dark_yellow_buttons">#FFFF9800</color>
 </resources>

@@ -7,6 +7,24 @@
     android:background="@drawable/bbgr"
     tools:context=".LoginActivity">
 
+    <Button
+        android:id="@+id/btn_si"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Sign-In"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/inputPassword"
+        app:layout_constraintStart_toStartOf="@+id/inputPassword"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.612" />
+
     <TextView
         android:id="@+id/logo_2"
         android:layout_width="wrap_content"
@@ -40,13 +58,13 @@
         android:paddingBottom="10dp"
         android:textColor="#000000"
         android:textSize="14sp"
-        app:passwordToggleEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/input_Fname"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/input_Fname"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.394" >
+        app:layout_constraintVertical_bias="0.394"
+        app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -157,38 +175,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.813" />
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:background="@drawable/btn_bg"
-        android:backgroundTint="@color/dark_blue"
-        android:fontFamily="@font/poppins"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:text="SIGN-IN"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/inputPassword"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/inputPassword"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword"
-        app:rippleColor="#FFFFFF" />
-
-    <TextView
-        android:id="@+id/txt_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
-        android:text="Or"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/btnLogin"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.625" />
-
     <TextView
         android:id="@+id/txt_5"
         android:layout_width="wrap_content"
@@ -209,37 +195,34 @@
         android:layout_height="50dp"
         android:background="@drawable/btn_bg"
         android:drawableStart="@drawable/facebook"
-        android:fontFamily="@font/poppins"
+        android:fontFamily="@font/poppins_bold"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:text="Facebook"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnLogin"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762" />
+        app:layout_constraintVertical_bias="0.762"
+        tools:layout_editor_absoluteX="56dp" />
 
     <Button
         android:id="@+id/btn_google"
         android:layout_width="140dp"
         android:layout_height="50dp"
-        android:layout_marginStart="32dp"
         android:background="@drawable/btn_bg"
         android:drawableStart="@drawable/google"
-        android:fontFamily="@font/poppins"
+        android:fontFamily="@font/poppins_bold"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:text="Google"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
-        app:layout_constraintHorizontal_bias="0.96"
-        app:layout_constraintStart_toStartOf="@+id/btnLogin"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762" />
+        app:layout_constraintVertical_bias="0.762"
+        tools:layout_editor_absoluteX="211dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
