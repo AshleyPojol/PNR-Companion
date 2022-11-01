@@ -75,7 +75,7 @@
         android:textColor="@color/dark_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintHorizontal_bias="0.767"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.804" />
@@ -291,7 +291,7 @@
         tools:layout_editor_absoluteY="308dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_profile"
         android:layout_width="125dp"
         android:layout_height="46dp"
         android:background="@drawable/box"
@@ -335,9 +335,9 @@
         android:fontFamily="@font/poppins_bold"
         android:text="Profile"
         android:textColor="@color/dark_blue"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profile"
         app:layout_constraintHorizontal_bias="0.625"
-        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/btn_profile"
         tools:layout_editor_absoluteY="654dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,26 +33,32 @@
         <Button
             android:id="@+id/btn_records3"
             android:layout_width="125dp"
-            android:layout_height="46dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="116dp"
             android:background="@drawable/box"
+            android:contentDescription="@string/records"
             android:drawableStart="@drawable/ic_baseline_newspaper_24"
             android:drawableTint="@color/dark_blue"
             android:fontFamily="@font/poppins_bold"
             android:paddingLeft="10dp"
             android:textColor="@color/dark_blue"
-            tools:layout_editor_absoluteX="60dp"
-            tools:layout_editor_absoluteY="645dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="125dp"
-            android:layout_height="46dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="116dp"
             android:background="@drawable/box"
+            android:contentDescription="@string/profile"
             android:drawableStart="@drawable/ic_baseline_person"
             android:drawableTint="@color/dark_blue"
             android:paddingLeft="15dp"
-            tools:layout_editor_absoluteX="221dp"
-            tools:layout_editor_absoluteY="645dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/txt_profile3"
@@ -331,7 +337,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
-            android:text="All letters such as school request, photo & video"
+            android:text="All letters such as school request, photo and video"
             android:textColor="@color/dark_blue"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"

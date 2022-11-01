@@ -46,4 +46,6 @@
     <string name="_1_jumbo_fries">1 JUMBO FRIES</string>
     <string name="buy_2_take_1">BUY 2   TAKE 1</string>
     <string name="redeem">REDEEM</string>
+    <string name="records">Records</string>
+    <string name="profile">Profile</string>
 </resources>
