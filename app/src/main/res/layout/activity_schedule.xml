@@ -9,41 +9,42 @@
     tools:context=".Schedule_Activity">
 
     <Button
-        android:id="@+id/button27"
+        android:id="@+id/btn_profile3"
         android:layout_width="125dp"
-        android:layout_height="46dp"
-        android:background="@drawable/box"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#FEEEEE"
+        android:contentDescription="@string/btn_profile"
         android:drawableStart="@drawable/ic_baseline_person"
         android:drawableTint="@color/dark_blue"
         android:paddingLeft="15dp"
-        tools:layout_editor_absoluteX="223dp"
-        tools:layout_editor_absoluteY="642dp" />
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_rewards"
+        app:layout_constraintVertical_bias="0.39" />
 
     <Button
-        android:id="@+id/btn_records2"
+        android:id="@+id/btn_records3"
         android:layout_width="125dp"
-        android:layout_height="46dp"
-        android:background="@drawable/box"
+        android:layout_height="48dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#FEEEEE"
+        android:contentDescription="@string/button_records"
         android:drawableStart="@drawable/ic_baseline_newspaper_24"
         android:drawableTint="@color/dark_blue"
         android:fontFamily="@font/poppins_bold"
-        android:paddingLeft="10dp"
         android:textColor="@color/dark_blue"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="642dp" />
-
-    <TextView
-        android:id="@+id/txt_records2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:elevation="10dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Records"
-        android:textColor="@color/dark_blue"
-        app:layout_constraintEnd_toEndOf="@+id/btn_records2"
-        app:layout_constraintHorizontal_bias="0.731"
-        app:layout_constraintStart_toStartOf="@+id/btn_records2"
-        tools:layout_editor_absoluteY="654dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_services"
+        app:layout_constraintVertical_bias="0.37" />
 
     <TextView
         android:id="@+id/txt_profile2"
@@ -51,23 +52,41 @@
         android:layout_height="wrap_content"
         android:elevation="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Profile"
+        android:text="@string/Profile_Profile"
         android:textColor="@color/dark_blue"
-        app:layout_constraintEnd_toEndOf="@+id/button27"
-        app:layout_constraintHorizontal_bias="0.625"
-        app:layout_constraintStart_toStartOf="@+id/button27"
-        tools:layout_editor_absoluteY="654dp" />
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_profile3"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profile3"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="@+id/btn_profile3"
+        app:layout_constraintTop_toTopOf="@+id/btn_profile3" />
+
+    <TextView
+        android:id="@+id/txt_records2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Profile_Records"
+        android:textColor="@color/dark_blue"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_records3"
+        app:layout_constraintEnd_toEndOf="@+id/btn_records3"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toStartOf="@+id/btn_records3"
+        app:layout_constraintTop_toTopOf="@+id/btn_records3"
+        app:layout_constraintVertical_bias="0.48000002" />
 
     <TextView
         android:id="@+id/txt_edsa"
         android:layout_width="250dp"
         android:layout_height="35dp"
         android:background="@drawable/btn_bg"
-        android:drawableTint="@color/dark_blue"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center|center_horizontal"
         android:paddingStart="10dp"
-        android:text="EDSA MAGALLANES STATION"
+        android:paddingEnd="10dp"
+        android:text="@string/Schedule_edsa_magallanes_station"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +102,7 @@
         android:background="@drawable/btn_bg"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center"
-        android:text="SCHEDULE"
+        android:text="@string/Schedule_schedule"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -98,11 +117,11 @@
         android:layout_width="180dp"
         android:layout_height="35dp"
         android:background="@drawable/btn_bg"
-        android:drawableTint="@color/dark_blue"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center|center_horizontal"
         android:paddingStart="10dp"
-        android:text="CHOOSE A STATION"
+        android:paddingEnd="10dp"
+        android:text="@string/Schedule_choose_a_station"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -112,17 +131,21 @@
         app:layout_constraintVertical_bias="0.162" />
 
     <ScrollView
-        android:layout_width="288dp"
-        android:layout_height="185dp"
+        android:id="@+id/scrollView2"
+        android:layout_width="255dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="36dp"
         android:animateLayoutChanges="false"
+        app:layout_constraintBottom_toTopOf="@+id/txt_edsa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="162dp">
+        app:layout_constraintTop_toBottomOf="@+id/txt_choose">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <Button
@@ -132,7 +155,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Tutuban Station"
+                android:text="@string/Schedule_tutuban_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -142,7 +165,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Laon-Laan Station"
+                android:text="@string/Schedule_laon_laan_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -152,7 +175,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Blumentritt Station"
+                android:text="@string/Schedule_blumentritt_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -162,7 +185,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Espana Station"
+                android:text="@string/Schedule_espana_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -172,7 +195,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Sta.Mesa Station"
+                android:text="@string/Schedule_sta_mesa_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -182,7 +205,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Pandacan Station"
+                android:text="@string/Schedule_pandacan_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -192,7 +215,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Paco Station"
+                android:text="@string/Schedule_paco_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -202,7 +225,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="San Andres Station"
+                android:text="@string/Schedule_san_andres_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -212,7 +235,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="VITO CRUZ STATION"
+                android:text="@string/Schedule_vito_cruz_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -222,7 +245,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Dela Rosa Station"
+                android:text="@string/Schedule_ela_rosa_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -232,7 +255,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Pasay Road Station"
+                android:text="@string/Schedule_pasay_road_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -244,7 +267,8 @@
                 android:fontFamily="@font/poppins_bold"
                 android:shadowColor="#000000"
                 android:text="EDSA Magallanes Station"
-                android:textColor="@color/dark_blue" />
+                android:textColor="@color/dark_blue"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/btn_nicols"
@@ -253,7 +277,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Nicols Station"
+                android:text="@string/Schedule_nicols_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -263,7 +287,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="FTI Station"
+                android:text="@string/Schedule_fti_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -273,7 +297,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="BICUTAN STATION"
+                android:text="@string/Schedule_bicutan_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -283,7 +307,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Sucat Station"
+                android:text="@string/Schedule_sucat_station"
                 android:textColor="@color/white" />
 
             <Button
@@ -293,7 +317,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_bg"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Alabang Station"
+                android:text="@string/Schedule_alabang_station"
                 android:textColor="@color/white" />
 
         </LinearLayout>

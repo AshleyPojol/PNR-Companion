@@ -159,7 +159,7 @@
         tools:layout_editor_absoluteY="259dp">
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/btn_ticket"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -170,11 +170,11 @@
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
             android:shadowColor="#000000"
-            android:text="Button"
+            android:text="Ticket Copy"
             android:textColor="@color/dark_blue" />
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/btn_receipt"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -185,11 +185,11 @@
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
             android:shadowColor="#000000"
-            android:text="Button"
+            android:text="Receipt"
             android:textColor="@color/dark_blue" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/btn_stationhis"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -200,22 +200,7 @@
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
             android:shadowColor="#000000"
-            android:text="Button"
-            android:textColor="@color/dark_blue" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/box"
-            android:fontFamily="@font/poppins_bold"
-            android:gravity="center"
-            android:paddingStart="10dp"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:shadowColor="#000000"
-            android:text="Button"
+            android:text="Station History"
             android:textColor="@color/dark_blue" />
 
     </LinearLayout>

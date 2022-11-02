@@ -11,73 +11,12 @@
         android:layout_height="match_parent"
         android:background="@drawable/back_3"
         tools:context=".ServiceActivity"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="-58dp">
-
-        <TextView
-            android:id="@+id/txt_records3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:drawableTint="@color/dark_blue"
-            android:elevation="10dp"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Records"
-            android:textColor="@color/dark_blue"
-            app:layout_constraintBottom_toBottomOf="@+id/btn_records3"
-            app:layout_constraintEnd_toEndOf="@+id/btn_records3"
-            app:layout_constraintHorizontal_bias="0.92"
-            app:layout_constraintStart_toStartOf="@+id/btn_records3"
-            app:layout_constraintTop_toTopOf="@+id/btn_records3" />
-
-        <Button
-            android:id="@+id/btn_records3"
-            android:layout_width="125dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginBottom="116dp"
-            android:background="@drawable/box"
-            android:contentDescription="@string/records"
-            android:drawableStart="@drawable/ic_baseline_newspaper_24"
-            android:drawableTint="@color/dark_blue"
-            android:fontFamily="@font/poppins_bold"
-            android:paddingLeft="10dp"
-            android:textColor="@color/dark_blue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="125dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="47dp"
-            android:layout_marginBottom="116dp"
-            android:background="@drawable/box"
-            android:contentDescription="@string/profile"
-            android:drawableStart="@drawable/ic_baseline_person"
-            android:drawableTint="@color/dark_blue"
-            android:paddingLeft="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <TextView
-            android:id="@+id/txt_profile3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTint="#FF9800"
-            android:elevation="10dp"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Profile"
-            android:textColor="@color/dark_blue"
-            app:layout_constraintBottom_toBottomOf="@+id/button3"
-            app:layout_constraintEnd_toEndOf="@+id/button3"
-            app:layout_constraintHorizontal_bias="0.62"
-            app:layout_constraintStart_toStartOf="@+id/button3"
-            app:layout_constraintTop_toTopOf="@+id/button3" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/txt_complaints"
-            android:layout_width="150dp"
+            android:layout_width="125dp"
             android:layout_height="30dp"
             android:autoText="false"
             android:background="@drawable/btn_bg"
@@ -95,7 +34,7 @@
 
         <TextView
             android:id="@+id/txt_inquiry"
-            android:layout_width="150dp"
+            android:layout_width="125dp"
             android:layout_height="30dp"
             android:autoText="false"
             android:background="@drawable/btn_bg"
@@ -162,23 +101,6 @@
             app:layout_constraintVertical_bias="0.185" />
 
         <TextView
-            android:id="@+id/txt_Cellphone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_baseline_person"
-            android:drawableTint="@color/dark_blue"
-            android:fontFamily="@font/poppins"
-            android:text="0916-582-5670"
-            android:textColor="@color/dark_blue"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.708"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.289" />
-
-        <TextView
             android:id="@+id/txt_Landline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -190,10 +112,27 @@
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.334"
+            app:layout_constraintHorizontal_bias="0.31"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.289" />
+            app:layout_constraintVertical_bias="0.302" />
+
+        <TextView
+            android:id="@+id/txt_Cellphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_person"
+            android:drawableTint="@color/dark_blue"
+            android:fontFamily="@font/poppins"
+            android:text="0916-582-5670"
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.654"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.302" />
 
         <TextView
             android:id="@+id/txt_Street"
@@ -251,7 +190,7 @@
             android:fontFamily="@font/poppins_bold"
             android:text="Tondo, Maynila 1000"
             android:textColor="@color/dark_blue"
-            android:textSize="12sp"
+            android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/txt_shoot"
             app:layout_constraintHorizontal_bias="0.488"
@@ -266,7 +205,7 @@
             android:fontFamily="@font/poppins"
             android:text="shoot request should be sent through postal mail"
             android:textColor="@color/dark_blue"
-            android:textSize="12sp"
+            android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/txt_alllet"
             app:layout_constraintHorizontal_bias="0.545"
@@ -283,7 +222,7 @@
             android:fontFamily="@font/poppins_bold"
             android:text="Office of the General Manager"
             android:textColor="@color/dark_blue"
-            android:textSize="12sp"
+            android:textSize="11sp"
             app:layout_constraintBottom_toTopOf="@+id/txt_4th"
             app:layout_constraintEnd_toEndOf="@+id/txt_shoot"
             app:layout_constraintHorizontal_bias="0.513"
@@ -298,7 +237,7 @@
             android:fontFamily="@font/poppins_bold"
             android:text="4th Floor PNR Executive Bldg. Mayhaligue St."
             android:textColor="@color/dark_blue"
-            android:textSize="12sp"
+            android:textSize="11sp"
             app:layout_constraintEnd_toEndOf="@+id/txt_shoot"
             app:layout_constraintHorizontal_bias="0.517"
             app:layout_constraintStart_toStartOf="@+id/txt_shoot"
@@ -312,7 +251,7 @@
             android:fontFamily="@font/poppins_bold"
             android:text="The General Manager"
             android:textColor="@color/dark_blue"
-            android:textSize="12sp"
+            android:textSize="11sp"
             app:layout_constraintEnd_toEndOf="@+id/txt_shoot"
             app:layout_constraintHorizontal_bias="0.508"
             app:layout_constraintStart_toStartOf="@+id/txt_shoot"
@@ -325,7 +264,7 @@
             android:fontFamily="@font/poppins"
             android:text="addressed to:"
             android:textColor="@color/dark_blue"
-            android:textSize="12sp"
+            android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/txt_shoot"
             app:layout_constraintStart_toStartOf="@+id/txt_shoot"
@@ -339,7 +278,7 @@
             android:fontFamily="@font/poppins"
             android:text="All letters such as school request, photo and video"
             android:textColor="@color/dark_blue"
-            android:textSize="12sp"
+            android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.508"
@@ -362,6 +301,77 @@
             app:layout_constraintStart_toStartOf="@+id/txt_comp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.556" />
+
+        <Button
+            android:id="@+id/btn_records2"
+            android:layout_width="125dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="41dp"
+            android:backgroundTint="#FEEEEE"
+            android:contentDescription="@string/button_records"
+            android:drawableStart="@drawable/ic_baseline_newspaper_24"
+            android:drawableTint="@color/dark_blue"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/dark_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.274"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tondo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_profile2"
+            android:layout_width="125dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="41dp"
+            android:backgroundTint="#FEEEEE"
+            android:contentDescription="@string/btn_profile"
+            android:drawableStart="@drawable/ic_baseline_person"
+            android:drawableTint="@color/dark_blue"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.772"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tondo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_profile3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/Profile_Profile"
+            android:textColor="@color/dark_blue"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_profile2"
+            app:layout_constraintEnd_toEndOf="@+id/btn_profile2"
+            app:layout_constraintHorizontal_bias="0.565"
+            app:layout_constraintStart_toStartOf="@+id/btn_profile2"
+            app:layout_constraintTop_toTopOf="@+id/btn_profile2"
+            app:layout_constraintVertical_bias="0.516" />
+
+        <TextView
+            android:id="@+id/txt_records3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/Profile_Records"
+            android:textColor="@color/dark_blue"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_records2"
+            app:layout_constraintEnd_toEndOf="@+id/btn_records2"
+            app:layout_constraintHorizontal_bias="0.638"
+            app:layout_constraintStart_toStartOf="@+id/btn_records2"
+            app:layout_constraintTop_toTopOf="@+id/btn_records2"
+            app:layout_constraintVertical_bias="0.516" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

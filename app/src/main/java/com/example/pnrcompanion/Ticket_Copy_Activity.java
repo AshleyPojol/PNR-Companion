@@ -1,15 +1,14 @@
 package com.example.pnrcompanion;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ForgetPasswordActivity extends AppCompatActivity {
+import android.os.Bundle;
 
+public class Ticket_Copy_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forget_password);
+        setContentView(R.layout.activity_ticket_copy);
     }
 }
