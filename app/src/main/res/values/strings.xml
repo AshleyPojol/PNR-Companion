@@ -93,4 +93,15 @@
     <string name="Schedule_san_andres_station">San Andres Station</string>
     <string name="Schedule_paco_station">Paco Station</string>
     <string name="REWARDS_rewards">REWARDS</string>
+    <string name="other_promos">OTHER PROMOS</string>
+    <string name="mcdonalds_starts_october_2022_november_2022">MCDONALDS: Starts October 2022 - November 2022</string>
+    <string name="mmcdo">MCDONALDS: Starts October 2022 - November 2022</string>
+    <string name="mcdo">MCDONALDS: Starts October 2022 - November 2022</string>
+    <string name="mmmcdo">MCDONALDS: Starts October 2022 - November 2022</string>
+    <string name="mmmmmdo">MCDONALDS: Starts October 2022 - November 2022</string>
+    <string name="trending_promos">TRENDING PROMOS</string>
+    <string name="_25_off_discount">25% OFF DISCOUNT</string>
+    <string name="buy_2_take_11">BUY 2 TAKE 1</string>
+    <string name="all_all">ALL</string>
+    <string name="food_and_beverage">FOOD AND BEVERAGE</string>
 </resources>

@@ -26,7 +26,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.274"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_tondo"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -45,7 +44,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.772"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_tondo"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -56,7 +54,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="@string/Profile_Profile"
         android:textColor="@color/dark_blue"
-        android:textSize="10sp"
+        android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="@+id/btn_profile4"
         app:layout_constraintEnd_toEndOf="@+id/btn_profile4"
         app:layout_constraintHorizontal_bias="0.61"
@@ -72,7 +70,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="@string/Profile_Records"
         android:textColor="@color/dark_blue"
-        android:textSize="10sp"
+        android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="@+id/btn_records6"
         app:layout_constraintEnd_toEndOf="@+id/btn_records6"
         app:layout_constraintHorizontal_bias="0.638"
@@ -86,7 +84,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/box"
         android:fontFamily="@font/poppins_bold"
-        android:text="FOOD AND BEVERAGE"
+        android:text="@string/food_and_beverage"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -118,7 +116,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/btn_bg"
         android:fontFamily="@font/poppins_bold"
-        android:text="ALL"
+        android:text="@string/all_all"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,7 +131,7 @@
         android:layout_height="100dp"
         android:background="@drawable/box_blue"
         android:fontFamily="@font/poppins_bold"
-        android:text="BUY 2 TAKE 1"
+        android:text="@string/buy_2_take_11"
         android:textColor="#FFF3F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -148,7 +146,7 @@
         android:layout_height="100dp"
         android:background="@drawable/box_blue"
         android:fontFamily="@font/poppins_bold"
-        android:text="25% OFF DISCOUNT"
+        android:text="@string/_25_off_discount"
         android:textColor="#FFF3F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -162,7 +160,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
-        android:text="TRENDING PROMOS"
+        android:text="@string/trending_promos"
         android:textColor="@color/dark_blue"
         tools:layout_editor_absoluteX="54dp"
         tools:layout_editor_absoluteY="187dp" />
@@ -186,9 +184,9 @@
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/box_blue"
                 android:fontFamily="@font/poppins_bold"
-                android:text="MCDONALDS: Starts October 2022 - November 2022"
+                android:text="@string/mmmmmdo"
                 android:textColor="#FDFDFD"
-                android:textSize="10sp" />
+                android:textSize="11sp" />
 
             <Button
                 android:id="@+id/BTN_KFC"
@@ -198,10 +196,11 @@
                 android:background="@drawable/box_blue"
                 android:fontFamily="@font/poppins_bold"
                 android:gravity="center|left"
-                android:paddingStart="10dp"
-                android:text="MCDONALDS: Starts October 2022 - November 2022"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/mmmcdo"
                 android:textColor="#FDFDFD"
-                android:textSize="10sp" />
+                android:textSize="11sp" />
 
             <Button
                 android:id="@+id/BTN_JOLLIBEE"
@@ -210,9 +209,9 @@
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/box_blue"
                 android:fontFamily="@font/poppins_bold"
-                android:text="MCDONALDS: Starts October 2022 - November 2022"
+                android:text="@string/mcdo"
                 android:textColor="#FDFDFD"
-                android:textSize="10sp" />
+                android:textSize="11sp" />
 
             <Button
                 android:id="@+id/BTN_FOODPANDA"
@@ -221,9 +220,9 @@
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/box_blue"
                 android:fontFamily="@font/poppins_bold"
-                android:text="MCDONALDS: Starts October 2022 - November 2022"
+                android:text="@string/mmcdo"
                 android:textColor="#FDFDFD"
-                android:textSize="10sp" />
+                android:textSize="11sp" />
 
             <Button
                 android:id="@+id/BTN_GRAB"
@@ -232,9 +231,9 @@
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/box_blue"
                 android:fontFamily="@font/poppins_bold"
-                android:text="MCDONALDS: Starts October 2022 - November 2022"
+                android:text="@string/mcdonalds_starts_october_2022_november_2022"
                 android:textColor="#FDFDFD"
-                android:textSize="10sp" />
+                android:textSize="11sp" />
 
         </LinearLayout>
     </ScrollView>
@@ -244,7 +243,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
-        android:text="OTHER PROMOS"
+        android:text="@string/other_promos"
         android:textColor="@color/dark_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
