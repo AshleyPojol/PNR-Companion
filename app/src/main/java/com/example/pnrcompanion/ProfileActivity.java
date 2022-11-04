@@ -16,6 +16,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         Button btn1 = findViewById(R.id.btn_services);
         Button btn2 = findViewById(R.id.btn_sch);
+        Button btn3 = findViewById(R.id.btn_rewards);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +29,13 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ProfileActivity.this, Schedule_Activity.class));
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileActivity.this, RewardsActivity.class));
             }
         });
 

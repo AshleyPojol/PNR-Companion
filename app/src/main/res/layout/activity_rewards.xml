@@ -4,264 +4,253 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bbgp">
+    android:background="@drawable/back_3"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="13dp">
+
 
     <Button
-        android:id="@+id/button_buy"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="90dp"
-        android:backgroundTint="#004AAD"
-        android:text="@string/buy_2_take_1"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="13sp"
-        android:textStyle="bold"
+        android:id="@+id/btn_records6"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="41dp"
+        android:backgroundTint="#FEEEEE"
+        android:contentDescription="@string/button_records"
+        android:drawableStart="@drawable/ic_baseline_newspaper_24"
+        android:drawableTint="@color/dark_blue"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_food" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="82dp"
-        android:layout_marginEnd="1dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/textView_Title"
+        app:layout_constraintHorizontal_bias="0.274"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pnr"
-        android:contentDescription="@string/pnr"/>
+        app:layout_constraintTop_toBottomOf="@+id/txt_tondo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_profile4"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="41dp"
+        android:backgroundTint="#FEEEEE"
+        android:contentDescription="@string/btn_profile"
+        android:drawableStart="@drawable/ic_baseline_person"
+        android:drawableTint="@color/dark_blue"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tondo"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView_Title"
+        android:id="@+id/txt_profile7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="145dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="145dp"
-        android:text="@string/pnr_companion"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.315"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Profile_Profile"
+        android:textColor="@color/dark_blue"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_profile4"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profile4"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="@+id/btn_profile4"
+        app:layout_constraintTop_toTopOf="@+id/btn_profile4"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <TextView
+        android:id="@+id/txt_records6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Profile_Records"
+        android:textColor="@color/dark_blue"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_records6"
+        app:layout_constraintEnd_toEndOf="@+id/btn_records6"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="@+id/btn_records6"
+        app:layout_constraintTop_toTopOf="@+id/btn_records6"
+        app:layout_constraintVertical_bias="0.516" />
 
     <Button
-        android:id="@+id/button_rewards"
-        android:layout_width="263dp"
+        android:id="@+id/lbl_foodbev"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins_bold"
+        android:text="FOOD AND BEVERAGE"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.677"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <TextView
+        android:id="@+id/lbl_rewards"
+        android:layout_width="211dp"
         android:layout_height="40dp"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="#004AAD"
-        android:clickable="false"
-        android:text="@string/rewards"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="#FFFFFF"
-        android:textSize="17sp"
-        android:textStyle="bold"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="@string/REWARDS_rewards"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintHorizontal_bias="0.715"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
 
     <Button
-        android:id="@+id/button_all"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="2dp"
-        android:backgroundTint="#004AAD"
-        android:text="@string/all"
-        android:textAlignment="center"
+        android:id="@+id/LBL_ALL"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/poppins_bold"
+        android:text="ALL"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_rewards" />
-
-    <Button
-        android:id="@+id/button_food"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="70dp"
-        android:backgroundTint="@color/white"
-        android:text="@string/food_and_beverages"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_rewards"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
 
     <Button
-        android:id="@+id/button_discount"
-        android:layout_width="100dp"
+        android:id="@+id/btn_buy1"
+        android:layout_width="130dp"
         android:layout_height="100dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#004AAD"
-        android:text="@string/discount"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="13sp"
-        android:textStyle="bold"
+        android:background="@drawable/box_blue"
+        android:fontFamily="@font/poppins_bold"
+        android:text="BUY 2 TAKE 1"
+        android:textColor="#FFF3F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_all" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
 
     <Button
-        android:id="@+id/button_free"
-        android:layout_width="100dp"
+        android:id="@+id/btn_discount"
+        android:layout_width="130dp"
         android:layout_height="100dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="3dp"
-        android:backgroundTint="#004AAD"
-        android:text="@string/free_ride"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="13sp"
-        android:textStyle="bold"
+        android:background="@drawable/box_blue"
+        android:fontFamily="@font/poppins_bold"
+        android:text="25% OFF DISCOUNT"
+        android:textColor="#FFF3F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_discount" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
 
-    <Button
-        android:id="@+id/button_fries"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="90dp"
-        android:backgroundTint="#004AAD"
-        android:text="@string/_1_jumbo_fries"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="13sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_buy" />
+    <TextView
+        android:id="@+id/lbl_1x1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="TRENDING PROMOS"
+        android:textColor="@color/dark_blue"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="187dp" />
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="299dp"
-        android:layout_height="92dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="47dp"
-        android:backgroundTint="#004AAD"
-        android:clickable="false"
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="298dp"
+        android:layout_height="209dp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="385dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BTN_MCDO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/box_blue"
+                android:fontFamily="@font/poppins_bold"
+                android:text="MCDONALDS: Starts October 2022 - November 2022"
+                android:textColor="#FDFDFD"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/BTN_KFC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/box_blue"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center|left"
+                android:paddingStart="10dp"
+                android:text="MCDONALDS: Starts October 2022 - November 2022"
+                android:textColor="#FDFDFD"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/BTN_JOLLIBEE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/box_blue"
+                android:fontFamily="@font/poppins_bold"
+                android:text="MCDONALDS: Starts October 2022 - November 2022"
+                android:textColor="#FDFDFD"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/BTN_FOODPANDA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/box_blue"
+                android:fontFamily="@font/poppins_bold"
+                android:text="MCDONALDS: Starts October 2022 - November 2022"
+                android:textColor="#FDFDFD"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/BTN_GRAB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/box_blue"
+                android:fontFamily="@font/poppins_bold"
+                android:text="MCDONALDS: Starts October 2022 - November 2022"
+                android:textColor="#FDFDFD"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/lbl_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="OTHER PROMOS"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="299dp"
-        android:layout_height="92dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="47dp"
-        android:backgroundTint="#004AAD"
-        android:clickable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="299dp"
-        android:layout_height="92dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="47dp"
-        android:backgroundTint="#004AAD"
-        android:clickable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="299dp"
-        android:layout_height="92dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="47dp"
-        android:backgroundTint="#004AAD"
-        android:clickable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_fries" />
-
-    <Button
-        android:id="@+id/button_redeem2"
-        android:layout_width="90dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginEnd="50dp"
-        android:backgroundTint="#FFFFFF"
-        android:fontFamily="@font/poppins"
-        android:text="@string/redeem"
-        android:textAlignment="center"
-        android:textColor="#004AAD"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_redeem"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <Button
-        android:id="@+id/button_redeem"
-        android:layout_width="90dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="50dp"
-        android:backgroundTint="#FFFFFF"
-        android:fontFamily="@font/poppins"
-        android:text="@string/redeem"
-        android:textAlignment="center"
-        android:textColor="#004AAD"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_fries"
-        tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
-
-    <Button
-        android:id="@+id/button_redeem3"
-        android:layout_width="90dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginEnd="50dp"
-        android:backgroundTint="#FFFFFF"
-        android:fontFamily="@font/poppins"
-        android:text="@string/redeem"
-        android:textAlignment="center"
-        android:textColor="#004AAD"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_redeem2"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <Button
-        android:id="@+id/button_redeem4"
-        android:layout_width="90dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginEnd="50dp"
-        android:backgroundTint="#FFFFFF"
-        android:fontFamily="@font/poppins"
-        android:text="@string/redeem"
-        android:textAlignment="center"
-        android:textColor="#004AAD"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_redeem3"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
