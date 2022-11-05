@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_3"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="13dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/pnr"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Title"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pnr" />
+
+    <TextView
+        android:id="@+id/textView_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="145dp"
+        android:text="@string/pnr_companion"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btn_records6"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#FEEEEE"
+        android:contentDescription="@string/button_records"
+        android:drawableStart="@drawable/ic_baseline_newspaper_24"
+        android:drawableTint="@color/dark_blue"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_profile4"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#FEEEEE"
+        android:contentDescription="@string/btn_profile"
+        android:drawableStart="@drawable/ic_baseline_person"
+        android:drawableTint="@color/dark_blue"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_profile7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Profile_Profile"
+        android:textColor="@color/dark_blue"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_profile4"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profile4"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="@+id/btn_profile4"
+        app:layout_constraintTop_toTopOf="@+id/btn_profile4"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <TextView
+        android:id="@+id/txt_records6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Profile_Records"
+        android:textColor="@color/dark_blue"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_records6"
+        app:layout_constraintEnd_toEndOf="@+id/btn_records6"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="@+id/btn_records6"
+        app:layout_constraintTop_toTopOf="@+id/btn_records6"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <Button
+        android:id="@+id/lbl_foodbev"
+        android:layout_width="215dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/food_and_beverage"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_ewallet" />
+
+    <TextView
+        android:id="@+id/lbl_ewallet"
+        android:layout_width="264dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="@string/REWARDS_rewards"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/LBL_ALL"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="45dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/all_all"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lbl_foodbev" />
+
+    <Button
+        android:id="@+id/btn_buy1"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/box_blue"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/buy_2_take_11"
+        android:textColor="#FFF3F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_discount" />
+
+    <Button
+        android:id="@+id/btn_discount"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/box_blue"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/_25_off_discount"
+        android:textColor="#FFF3F3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_1x1" />
+
+    <TextView
+        android:id="@+id/lbl_1x1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/trending_rewards"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_ALL" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="300dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_txt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BTN_CASHBACK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/box_blue"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/mmmmmdo"
+                android:textColor="#FDFDFD"
+                android:textSize="11sp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <Button
+                android:id="@+id/BTN_20PERCENT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/box_blue"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/mmmcdo"
+                android:textColor="#FDFDFD"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/BTN_SODEXO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/box_blue"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/mcdo"
+                android:textColor="#FDFDFD"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/BTN_PNR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/box_blue"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/mmcdo"
+                android:textColor="#FDFDFD"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/BTN_OTHER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/box_blue"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/mcdonalds_starts_october_2022_november_2022"
+                android:textColor="#FDFDFD"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/lbl_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/other_rewards"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_discount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

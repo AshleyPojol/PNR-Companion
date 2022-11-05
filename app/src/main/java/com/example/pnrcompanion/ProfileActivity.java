@@ -14,28 +14,52 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        Button btn1 = findViewById(R.id.btn_services);
-        Button btn2 = findViewById(R.id.btn_sch);
-        Button btn3 = findViewById(R.id.btn_rewards);
+        Button btn1 = findViewById(R.id.btn_sch);
+        Button btn2 = findViewById(R.id.btn_sta);
+        Button btn3 = findViewById(R.id.btn_ewallet);
+        Button btn4 = findViewById(R.id.btn_promos);
+        Button btn5 = findViewById(R.id.btn_services);
+        Button btn6 = findViewById(R.id.btn_rewards);
 
         btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ProfileActivity.this, ServiceActivity.class));
-            }
-        });
-
-        btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ProfileActivity.this, Schedule_Activity.class));
             }
         });
 
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileActivity.this, Station_History.class));
+            }
+        });
+
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ProfileActivity.this, RewardsActivity.class));
+                startActivity(new Intent(ProfileActivity.this, EWalletActivity.class));
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileActivity.this, PromoActivity.class));
+            }
+        });
+
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileActivity.this, ServiceActivity.class));
+            }
+        });
+
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileActivity.this, RewardActivity.class));
             }
         });
 

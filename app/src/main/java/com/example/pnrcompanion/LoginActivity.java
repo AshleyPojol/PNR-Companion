@@ -17,7 +17,7 @@ public class LoginActivity<clickableSpan> extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         TextView txt1 = findViewById(R.id.txt_Signin2);
-        TextView txt2 = findViewById(R.id.txt_3);
+        TextView txt2 = findViewById(R.id.txt_forgotPassword);
         TextView txt3 = findViewById(R.id.txt_signup2);
 
         txt1.setOnClickListener(new View.OnClickListener() {

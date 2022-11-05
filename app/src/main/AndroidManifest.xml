@@ -13,89 +13,110 @@
         android:theme="@style/Theme.PNRCompanion"
         tools:targetApi="31">
         <activity
-            android:name=".Station_History"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".RewardActivity"
             android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PromoActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".EWalletActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Station_History"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Receipt_Activity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Ticket_Copy_Activity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Records_Activity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Profile_Section_Activity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Schedule_Activity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".ServiceActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".ProfileActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".ForgetPasswordActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".RegisterActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
