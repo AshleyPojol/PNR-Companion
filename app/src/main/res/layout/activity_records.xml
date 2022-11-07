@@ -12,11 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:drawableTint="#FF9800"
         android:elevation="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Profile"
+        android:text="@string/profile"
         android:textColor="@color/dark_blue"
+        app:drawableTint="#FF9800"
         app:layout_constraintBottom_toBottomOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="@+id/button4"
         app:layout_constraintHorizontal_bias="0.607"
@@ -28,97 +28,113 @@
         android:id="@+id/txt_records5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTint="@color/dark_blue"
         android:elevation="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Records"
+        android:text="@string/records"
         android:textColor="@color/white"
+        app:drawableTint="@color/dark_blue"
         app:layout_constraintBottom_toBottomOf="@+id/btn_records5"
         app:layout_constraintEnd_toEndOf="@+id/btn_records5"
         app:layout_constraintHorizontal_bias="0.696"
         app:layout_constraintStart_toStartOf="@+id/btn_records5"
         app:layout_constraintTop_toTopOf="@+id/btn_records5"
-        app:layout_constraintVertical_bias="0.59" />
+        app:layout_constraintVertical_bias="0.59"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btn_records5"
         android:layout_width="125dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/btn_bg_yell"
+        android:contentDescription="@string/records"
         android:drawableStart="@drawable/ic_baseline_newspaper_24"
         android:drawableTint="@color/white"
         android:fontFamily="@font/poppins_bold"
-        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
         android:textColor="@color/dark_blue"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="645dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="125dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
         android:background="@drawable/box"
+        android:contentDescription="@string/profile"
         android:drawableStart="@drawable/ic_baseline_person"
         android:drawableTint="@color/dark_blue"
-        android:paddingLeft="15dp"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="645dp" />
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/btn_remaining2"
         android:layout_width="137dp"
         android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
         android:backgroundTint="#FEEEEE"
         android:fontFamily="@font/poppins_bold"
-        android:paddingLeft="60dp"
+        android:paddingStart="60dp"
         android:paddingTop="25dp"
-        android:text="₱ 1,203.09"
+        android:text="@string/_1_203_09"
         android:textColor="#000000"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="168dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_prof" />
 
     <TextView
         android:id="@+id/txt_rewards2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
         android:elevation="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Reward Balance"
+        android:text="@string/reward_balance"
         android:textColor="@color/dark_blue"
-        android:textSize="10sp"
-        tools:layout_editor_absoluteX="232dp"
-        tools:layout_editor_absoluteY="176dp" />
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/btn_remainingbal2"
+        app:layout_constraintTop_toTopOf="@+id/btn_remainingbal2" />
 
     <Button
         android:id="@+id/btn_prof"
         android:layout_width="298dp"
         android:layout_height="101dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="60dp"
         android:backgroundTint="#FEEEEE"
         android:fontFamily="@font/poppins_bold"
-        android:paddingRight="50dp"
+        android:paddingEnd="50dp"
         android:paddingBottom="40dp"
-        android:text="REINER GENA"
+        android:text="@string/reiner_gena"
         android:textColor="@color/dark_blue"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txt_bal2"
         android:layout_width="117dp"
         android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
         android:elevation="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Remaining Balance"
+        android:text="@string/remaining_balance"
         android:textColor="@color/dark_blue"
-        android:textSize="10sp"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="176dp" />
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/btn_remaining2"
+        app:layout_constraintTop_toTopOf="@+id/btn_remaining2" />
 
     <TextView
         android:id="@+id/txt_acctype2"
@@ -127,9 +143,9 @@
         android:layout_marginBottom="40dp"
         android:elevation="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Student Account"
+        android:text="@string/student_account"
         android:textColor="@color/dark_blue"
-        android:textSize="10sp"
+        android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="@+id/btn_prof"
         app:layout_constraintEnd_toEndOf="@+id/btn_prof"
         app:layout_constraintHorizontal_bias="0.331"
@@ -141,22 +157,27 @@
         android:id="@+id/btn_remainingbal2"
         android:layout_width="137dp"
         android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
         android:backgroundTint="#FEEEEE"
         android:fontFamily="@font/poppins_bold"
-        android:paddingLeft="80dp"
+        android:paddingStart="80dp"
         android:paddingTop="25dp"
-        android:text="25.18"
+        android:text="@string/_25_18"
         android:textColor="#F10C0C"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="223dp"
-        tools:layout_editor_absoluteY="168dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_prof" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="304dp"
         android:layout_height="368dp"
+        android:layout_marginTop="65dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="259dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_prof">
 
         <Button
             android:id="@+id/btn_ticket"
@@ -170,7 +191,7 @@
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
             android:shadowColor="#000000"
-            android:text="Ticket Copy"
+            android:text="@string/ticket_copy"
             android:textColor="@color/dark_blue" />
 
         <Button
@@ -185,7 +206,7 @@
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
             android:shadowColor="#000000"
-            android:text="Receipt"
+            android:text="@string/receipt"
             android:textColor="@color/dark_blue" />
 
         <Button
@@ -200,7 +221,7 @@
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
             android:shadowColor="#000000"
-            android:text="Station History"
+            android:text="@string/station_history"
             android:textColor="@color/dark_blue" />
 
     </LinearLayout>

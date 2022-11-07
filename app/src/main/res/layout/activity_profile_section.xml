@@ -7,15 +7,49 @@
     android:background="@drawable/back_3"
     tools:context=".Profile_Section_Activity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="322dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_profile4"
+        app:srcCompat="@drawable/box_blue"
+        android:contentDescription="@string/imageDescription" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="322dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/imageDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/box_blue" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="322dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/imageDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/box_blue" />
+
     <TextView
         android:id="@+id/txt_records4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTint="@color/dark_blue"
         android:elevation="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Records"
+        android:text="@string/records"
         android:textColor="@color/dark_blue"
+        app:drawableTint="@color/dark_blue"
         app:layout_constraintBottom_toBottomOf="@+id/btn_records4"
         app:layout_constraintEnd_toEndOf="@+id/btn_records4"
         app:layout_constraintHorizontal_bias="0.666"
@@ -25,265 +59,282 @@
     <Button
         android:id="@+id/btn_records4"
         android:layout_width="125dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/box"
+        android:contentDescription="@string/records"
         android:drawableStart="@drawable/ic_baseline_newspaper_24"
         android:drawableTint="@color/dark_blue"
         android:fontFamily="@font/poppins_bold"
-        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
         android:textColor="@color/dark_blue"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="645dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_profile1"
         android:layout_width="125dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="70dp"
         android:background="@drawable/btn_bg_yell"
+        android:contentDescription="@string/profile"
         android:drawableStart="@drawable/ic_baseline_person"
         android:drawableTint="@color/pinkish"
-        android:paddingLeft="15dp"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="645dp" />
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_records4"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/txt_profile6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTint="#FF9800"
         android:elevation="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Profile"
+        android:text="@string/profile"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:drawableTint="#FF9800"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_profile1"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profile1"
         app:layout_constraintHorizontal_bias="0.62"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button" />
+        app:layout_constraintStart_toStartOf="@+id/btn_profile1"
+        app:layout_constraintTop_toTopOf="@+id/btn_profile1"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/txt_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableRight="@android:drawable/ic_media_play"
-        android:drawableTint="@color/dark_blue"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center_horizontal|center_vertical"
-        android:paddingRight="10dp"
-        android:text="Information"
-        android:textColor="@color/dark_blue"
+        android:paddingEnd="10dp"
+        android:text="@string/information"
+        android:textColor="@color/white"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="535dp" />
+        app:drawableRightCompat="@android:drawable/ic_media_play"
+        app:drawableTint="@color/dark_blue"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/dra_inf" />
 
     <TextView
         android:id="@+id/txt_Sett"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableRight="@android:drawable/ic_media_play"
-        android:drawableTint="@color/dark_blue"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center_horizontal|center_vertical"
-        android:paddingRight="10dp"
-        android:text="Settings"
-        android:textColor="@color/dark_blue"
+        android:paddingEnd="10dp"
+        android:text="@string/settings"
+        android:textColor="@color/white"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="171dp"
-        tools:layout_editor_absoluteY="567dp" />
+        app:layout_constraintEnd_toEndOf="@+id/txt_info"
+        app:layout_constraintTop_toTopOf="@+id/dra_set"
+        app:drawableRightCompat="@android:drawable/ic_media_play"
+        app:drawableTint="@color/dark_blue" />
 
     <TextView
         android:id="@+id/dra_inf"
         android:layout_width="36dp"
         android:layout_height="32dp"
-        android:drawableStart="@drawable/ic_switchaccount"
-        android:drawableTint="@color/dark_blue"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
         android:paddingStart="5dp"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="535dp" />
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Acc"
+        app:drawableStartCompat="@drawable/ic_switchaccount"
+        app:drawableTint="@color/white" />
 
     <TextView
         android:id="@+id/dra_set"
         android:layout_width="36dp"
         android:layout_height="32dp"
-        android:drawableStart="@drawable/ic_baseline_settings_24"
-        android:drawableTint="@color/dark_blue"
+        android:layout_marginTop="5dp"
         android:paddingStart="5dp"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="567dp" />
+        app:layout_constraintStart_toStartOf="@+id/dra_inf"
+        app:layout_constraintTop_toBottomOf="@+id/dra_inf"
+        app:drawableStartCompat="@drawable/ic_baseline_settings_24"
+        app:drawableTint="@color/white" />
 
     <TextView
         android:id="@+id/txt_valid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableRight="@android:drawable/ic_media_play"
-        android:drawableTint="@color/dark_blue"
-        android:fontFamily="@font/poppins_bold"
+        android:fontFamily="@font/poppins_medium"
         android:gravity="center_horizontal|center_vertical"
-        android:paddingRight="10dp"
-        android:text="Valid Governament ID"
-        android:textColor="@color/dark_blue"
+        android:paddingEnd="10dp"
+        android:text="@string/valid_governament_id"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="388dp" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/dra_per"
+        app:drawableRightCompat="@android:drawable/ic_media_play"
+        app:drawableTint="@color/dark_blue" />
 
     <TextView
         android:id="@+id/txt_valid2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableRight="@android:drawable/ic_media_play"
-        android:drawableTint="@color/dark_blue"
-        android:fontFamily="@font/poppins_bold"
+        android:fontFamily="@font/poppins_medium"
         android:gravity="center_horizontal|center_vertical"
-        android:paddingRight="10dp"
-        android:text="Verified Bank Wallet"
-        android:textColor="@color/dark_blue"
+        android:paddingEnd="10dp"
+        android:text="@string/verified_bank_wallet"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="420dp" />
+        app:layout_constraintEnd_toEndOf="@+id/txt_valid"
+        app:layout_constraintTop_toBottomOf="@+id/dra_per"
+        app:drawableTint="@color/black"
+        app:drawableEndCompat="@android:drawable/ic_media_play" />
 
     <TextView
         android:id="@+id/txt_verif"
-        android:layout_width="211dp"
-        android:layout_height="40dp"
-        android:background="@drawable/btn_bg"
+        android:layout_width="137dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center"
-        android:text="VERIFICATION"
+        android:text="@string/verification"
+        android:textAlignment="textStart"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/txt_Acc"
-        android:layout_width="211dp"
-        android:layout_height="40dp"
-        android:background="@drawable/btn_bg"
+        android:layout_width="117dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center"
-        android:text="ACCOUNT"
+        android:text="@string/account"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <TextView
         android:id="@+id/txt_stu3"
         android:layout_width="168dp"
         android:layout_height="28dp"
-        android:drawableRight="@android:drawable/ic_media_play"
-        android:drawableTint="@color/dark_blue"
         android:fontFamily="@font/poppins_medium"
         android:gravity="center"
-        android:text="09049324564"
-        android:textColor="@color/dark_blue"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="259dp" />
+        android:text="@string/_09049324564"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txt_email4"
+        app:layout_constraintTop_toTopOf="@+id/txt_contact"
+        app:drawableRightCompat="@android:drawable/ic_media_play"
+        app:drawableTint="@color/dark_blue" />
 
     <TextView
         android:id="@+id/txt_email4"
         android:layout_width="203dp"
         android:layout_height="25dp"
-        android:drawableRight="@android:drawable/ic_media_play"
-        android:drawableTint="@color/dark_blue"
         android:fontFamily="@font/poppins_medium"
         android:gravity="center"
-        android:text="rtgena@gmail.com"
-        android:textColor="@color/dark_blue"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="234dp" />
+        android:text="@string/rtgena_gmail_com"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txt_stu"
+        app:layout_constraintTop_toTopOf="@+id/txt_email3"
+        app:drawableRightCompat="@android:drawable/ic_media_play"
+        app:drawableTint="@color/dark_blue" />
 
     <TextView
         android:id="@+id/txt_email3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Email"
-        android:textColor="@color/dark_blue"
+        android:text="@string/e_mail"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/txt_atype"
         app:layout_constraintStart_toStartOf="@+id/txt_atype"
-        tools:layout_editor_absoluteY="234dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_atype" />
 
     <TextView
         android:id="@+id/txt_profile4"
-        android:layout_width="211dp"
+        android:layout_width="273dp"
         android:layout_height="40dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="45dp"
         android:background="@drawable/btn_bg"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center"
-        android:text="PROFILE"
+        android:text="@string/profile"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.715"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txt_atype"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Account Type"
-        android:textColor="@color/dark_blue"
+        android:text="@string/account_type"
+        android:textColor="@color/white"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="206dp" />
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/txt_contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Contact"
-        android:textColor="@color/dark_blue"
+        android:text="@string/contact"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/txt_atype"
         app:layout_constraintStart_toStartOf="@+id/txt_atype"
-        tools:layout_editor_absoluteY="262dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_email3" />
 
     <TextView
         android:id="@+id/txt_stu"
         android:layout_width="168dp"
         android:layout_height="28dp"
-        android:drawableRight="@android:drawable/ic_media_play"
-        android:drawableTint="@color/dark_blue"
+        android:layout_marginEnd="7dp"
         android:fontFamily="@font/poppins_medium"
         android:gravity="center"
-        android:text="Student Account"
-        android:textColor="@color/dark_blue"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="206dp" />
+        android:text="@string/student_account"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/txt_atype"
+        app:drawableRightCompat="@android:drawable/ic_media_play"
+        app:drawableTint="@color/black" />
 
     <TextView
         android:id="@+id/dra_per"
         android:layout_width="36dp"
         android:layout_height="32dp"
-        android:drawableStart="@drawable/ic_baseline_person"
-        android:drawableTint="@color/dark_blue"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="7dp"
         android:paddingStart="5dp"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="388dp" />
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_verif"
+        app:drawableStartCompat="@drawable/ic_baseline_person"
+        app:drawableTint="@color/white" />
 
     <TextView
         android:id="@+id/dra_wal"
         android:layout_width="36dp"
         android:layout_height="32dp"
-        android:drawableStart="@drawable/ic_baseline_account_balance_wallet_24"
-        android:drawableTint="@color/dark_blue"
+        android:layout_marginTop="5dp"
         android:paddingStart="5dp"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="420dp" />
+        app:layout_constraintStart_toStartOf="@+id/dra_per"
+        app:layout_constraintTop_toBottomOf="@+id/dra_per"
+        app:drawableStartCompat="@drawable/ic_baseline_account_balance_wallet_24"
+        app:drawableTint="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
