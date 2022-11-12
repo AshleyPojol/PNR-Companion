@@ -20,8 +20,8 @@ public class ProfileActivity extends AppCompatActivity {
         Button btn4 = findViewById(R.id.btn_promos);
         Button btn5 = findViewById(R.id.btn_services);
         Button btn6 = findViewById(R.id.btn_rewards);
-        Button btn7 = findViewById(R.id.btn_records9);
-        Button btn8 = findViewById(R.id.btn_profile9);
+        Button btn7 = findViewById(R.id.btn_records10);
+        Button btn8 = findViewById(R.id.btn_profile10);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

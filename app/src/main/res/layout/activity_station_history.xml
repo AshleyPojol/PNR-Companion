@@ -4,6 +4,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back_3"
     tools:context=".Station_History">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/pnr"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Title"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pnr" />
+
+    <TextView
+        android:id="@+id/textView_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="145dp"
+        android:text="@string/pnr_companion"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_ewallet"
+        android:layout_width="270dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="@string/station"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="322dp"
+        android:layout_height="590dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_ewallet"
+        app:srcCompat="@drawable/directory" />
+
+    <Button
+        android:id="@+id/btn_profile10"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/box"
+        android:contentDescription="@string/Profile_Profile"
+        android:drawableStart="@drawable/ic_baseline_person"
+        android:drawableTint="@color/dark_blue"
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_records10"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/btn_records10"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box"
+        android:contentDescription="@string/Profile_Records"
+        android:drawableStart="@drawable/ic_baseline_newspaper_24"
+        android:drawableTint="@color/dark_blue"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingStart="10dp"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/txt_records"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/records"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_records10"
+        app:layout_constraintEnd_toEndOf="@+id/btn_records10"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="@+id/btn_records10" />
+
+    <TextView
+        android:id="@+id/txt_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/profile"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_profile10"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profile10"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="@+id/btn_profile10" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

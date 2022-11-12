@@ -344,7 +344,7 @@
         app:layout_constraintStart_toStartOf="@+id/btn_sta" />
 
     <Button
-        android:id="@+id/btn_profile9"
+        android:id="@+id/btn_profile10"
         android:layout_width="125dp"
         android:layout_height="48dp"
         android:layout_marginTop="30dp"
@@ -359,7 +359,7 @@
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
-        android:id="@+id/btn_records9"
+        android:id="@+id/btn_records10"
         android:layout_width="125dp"
         android:layout_height="48dp"
         android:layout_marginStart="60dp"
@@ -384,10 +384,10 @@
         android:fontFamily="@font/poppins_bold"
         android:text="@string/records"
         android:textColor="@color/dark_blue"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_records9"
-        app:layout_constraintEnd_toEndOf="@+id/btn_records9"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_records10"
+        app:layout_constraintEnd_toEndOf="@+id/btn_records10"
         app:layout_constraintHorizontal_bias="0.878"
-        app:layout_constraintStart_toStartOf="@+id/btn_records9" />
+        app:layout_constraintStart_toStartOf="@+id/btn_records10" />
 
     <TextView
         android:id="@+id/txt_profile"
@@ -398,9 +398,9 @@
         android:fontFamily="@font/poppins_bold"
         android:text="@string/profile"
         android:textColor="@color/dark_blue"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_profile9"
-        app:layout_constraintEnd_toEndOf="@+id/btn_profile9"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_profile10"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profile10"
         app:layout_constraintHorizontal_bias="0.73"
-        app:layout_constraintStart_toStartOf="@+id/btn_profile9" />
+        app:layout_constraintStart_toStartOf="@+id/btn_profile10" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
